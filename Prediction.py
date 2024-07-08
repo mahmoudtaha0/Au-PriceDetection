@@ -1,6 +1,5 @@
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
@@ -21,6 +20,6 @@ def main():
     print(f"Mean Squared Error: {mean_squared_error(Y_test, predictions)}")
     print(f"Mean Absolute Error: {mean_absolute_error(Y_test, predictions)}")
     print(f"R² Score: {r2_score(Y_test, predictions)}")
-    
+
 if __name__ == "__main__":
     main()
